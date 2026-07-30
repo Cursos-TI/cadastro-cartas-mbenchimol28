@@ -5,11 +5,91 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  // Área para entrada de dados
+    // Área para definição das variáveis para armazenar as propriedades das cidades
+    char estado1;
+    char codigo_da_carta1[50];
+    char nome_da_cidade1[50];
+    int populacao1;
+    float area1;
+    float pib1;
+    int numero_de_pontos_turisticos1;
 
-  // Área para exibição dos dados da cidade
+    char estado2;
+    char codigo_da_carta2[50];
+    char nome_da_cidade2[50];
+    int populacao2;
+    float area2;
+    float pib2;
+    int numero_de_pontos_turisticos2;
 
-return 0;
-} 
+    // Área para entrada de dados da carta um
+    printf("Digite os dados da Carta 01:\n\n");
+
+    printf("Digite o estado (A ate H): ");
+    scanf(" %c", &estado1);
+
+    printf("Código da Carta (A01 até D04): ");
+    scanf(" %s", codigo_da_carta1);
+
+    printf("Nome da Cidade: ");
+    scanf(" %s", nome_da_cidade1);
+
+    printf("População: ");
+    scanf(" %d", &populacao1);
+
+    printf("Área (em km²): ");
+    scanf(" %f", &area1);
+
+    printf("PIB: ");
+    scanf(" %f", &pib1);
+
+    printf("Número de Pontos Turísticos: ");
+    scanf(" %d", &numero_de_pontos_turisticos1);
+
+    // Área para entrada de dados da carta dois
+    printf("\nDigite os dados da Carta 02:\n\n");
+
+    printf("Digite o estado (A ate H): ");
+    scanf(" %c", &estado2);
+
+    printf("Código da Carta (A01 até D04): ");
+    scanf(" %s", codigo_da_carta2);
+
+    printf("Nome da Cidade: ");
+    scanf(" %s", nome_da_cidade2);
+
+    printf("População: ");
+    scanf(" %d", &populacao2);
+
+    printf("Área (em km²): ");
+    scanf(" %f", &area2);
+
+    printf("PIB: ");
+    scanf(" %f", &pib2);
+
+    printf("Número de Pontos Turísticos: ");
+    scanf(" %d", &numero_de_pontos_turisticos2);
+
+    // Área para exibição dos dados da cidade 1
+    printf("\nCarta 1:\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo_da_carta1);
+    printf("Nome da Cidade: %s\n", nome_da_cidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos1);
+
+    // Área para exibição dos dados da cidade 2
+    printf("\nCarta 2:\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigo_da_carta2);
+    printf("Nome da Cidade: %s\n", nome_da_cidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos2);
+
+    return 0;
+}
