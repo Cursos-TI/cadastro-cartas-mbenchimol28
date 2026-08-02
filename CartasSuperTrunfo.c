@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <locale.h>
-#include <windows.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
@@ -8,12 +7,8 @@
 
 int main() {
     
-    // Configuração do console para suportar caracteres especiais
-
-    SetConsoleCP(65001);
-    SetConsoleOutputCP(65001);
-
     // Área para definição das variáveis para armazenar as propriedades das cidades
+    
     char estado1;
     char codigo_da_carta1[50];
     char nome_da_cidade1[50];
@@ -91,7 +86,6 @@ int main() {
 
     printf("Número de Pontos Turísticos: ");
     scanf(" %d", &numero_de_pontos_turisticos2);
-    getchar();
 
     // Área para exibição dos dados da cidade 1
     
